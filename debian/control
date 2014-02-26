@@ -1,0 +1,58 @@
+Source: markupsafe
+Section: python
+Priority: optional
+Maintainer: Piotr Ożarowski <piotr@debian.org>
+Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9),
+ python-all-dev (>= 2.6.5-2), python3-all-dev (>= 3.3.0-3~),
+ python-all-dbg, python3-all-dbg,
+ python-setuptools, python3-setuptools
+Standards-Version: 3.9.4
+Homepage: http://pypi.python.org/pypi/MarkupSafe
+Vcs-Svn: svn://anonscm.debian.org/python-modules/packages/markupsafe/trunk/
+Vcs-Browser: http://anonscm.debian.org/viewvc/python-modules/packages/markupsafe/trunk/
+XS-Python-Version: >= 2.4
+X-Python3-Version: >= 3.3
+
+Package: python-markupsafe
+Architecture: any
+Depends: ${misc:Depends}, ${python:Depends}, ${shlibs:Depends}
+Provides: ${python:Provides}
+Description: HTML/XHTML/XML string library for Python
+ MarkupSafe is a Python library implementing a unicode subclass that is
+ aware of HTML escaping rules. It can be used to implement automatic
+ string escaping.
+
+Package: python-markupsafe-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: python-markupsafe (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}
+Description: HTML/XHTML/XML string library for Python - debug version
+ MarkupSafe is a Python library implementing a unicode subclass that is
+ aware of HTML escaping rules. It can be used to implement automatic
+ string escaping.
+ .
+ This package contains the extension built for the Python debug interpreter.
+
+Package: python3-markupsafe
+Architecture: any
+Depends: ${misc:Depends}, ${python3:Depends}, ${shlibs:Depends}
+Description: HTML/XHTML/XML string library for Python 3
+ MarkupSafe is a Python library implementing a unicode subclass that is
+ aware of HTML escaping rules. It can be used to implement automatic
+ string escaping.
+ .
+ This package contains the Python 3 version.
+
+Package: python3-markupsafe-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: python3-markupsafe (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}, ${python3:Depends}
+Description: HTML/XHTML/XML string library for Python 3 - debug version
+ MarkupSafe is a Python library implementing a unicode subclass that is
+ aware of HTML escaping rules. It can be used to implement automatic
+ string escaping.
+ .
+ This package contains the extension built for the Python 3 debug interpreter.
