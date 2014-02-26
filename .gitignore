@@ -8,3 +8,5 @@ dist
 build
 .tox
 *.egg-info
+/install-*
+/build-*

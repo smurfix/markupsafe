@@ -1,0 +1,8 @@
+/files
+/*.log
+/*.substvars
+/*.debhelper
+/python-markupsafe
+/python-markupsafe-dbg
+/python3-markupsafe
+/python3-markupsafe-dbg
